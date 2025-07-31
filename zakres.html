@@ -24,35 +24,60 @@
     </section>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <a class="navbar-brand" href="#">
-            <img src="img/logo.jpg" alt="Logo" height="50">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse d-lg-flex flex-column align-items-center justify-content-center text-center"
-            id="navbarNavDropdown">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm border-bottom border-secondary">
+        <div class="container-fluid px-3">
 
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">O Firmie</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Zakres Robót</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="maszyny.html">Dostępne Maszyny</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cennik.html">Cennik</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="referencje.html">Referencje</a>
-                </li>
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/logo.jpg" alt="Logo" height="50" class="me-2 rounded shadow-sm">
+                <span class="fw-bold fs-5">Stanisław Babiś</span>
+            </a>
 
-            </ul>
+            <!-- Kontakt mobilny (zawsze widoczny) -->
+            <div class="d-lg-none ms-auto text-white text-end small">
+                <div><strong>📞</strong> <a href="tel:+48123456789" class="text-white text-decoration-none">+48 123 456
+                        789</a></div>
+                <div><strong>✉️</strong> <a href="mailto:kontakt@example.com"
+                        class="text-white text-decoration-none">kontakt@example.com</a></div>
+            </div>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse mt-2 mt-lg-0" id="navbarNavDropdown">
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#">O Firmie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="zakres.html">Zakres Robót</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="maszyny.html">Posiadane Maszyny</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="cennik.html">Cennik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="referencje.html">Referencje</a>
+                    </li>
+                </ul>
+
+                <!-- Kontakt desktop -->
+                <div class="d-none d-lg-flex ms-4 text-white align-items-center small">
+                    <div class="me-4"><strong>📞</strong> <a href="tel:+48123456789"
+                            class="text-white text-decoration-none">+48 123 456 789</a></div>
+                    <div><strong>✉️</strong> <a href="mailto:kontakt@example.com"
+                            class="text-white text-decoration-none">kontakt@example.com</a></div>
+                </div>
+
+            </div>
         </div>
     </nav>
 

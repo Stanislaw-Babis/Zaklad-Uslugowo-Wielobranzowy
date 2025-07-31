@@ -23,57 +23,63 @@
     </section>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm border-bottom border-secondary">
+        <div class="container-fluid px-3">
 
-            <a class="navbar-brand" href="#">
-                <img src="img/logo.jpg" alt="Logo" height="50">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/logo.jpg" alt="Logo" height="50" class="me-2 rounded shadow-sm">
+                <span class="fw-bold fs-5">Stanisław Babiś</span>
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- Kontakt mobilny (zawsze widoczny) -->
+            <div class="d-lg-none ms-auto text-white text-end small">
+                <div><strong>📞</strong> <a href="tel:+48123456789" class="text-white text-decoration-none">+48 123 456
+                        789</a></div>
+                <div><strong>✉️</strong> <a href="mailto:kontakt@example.com"
+                        class="text-white text-decoration-none">kontakt@example.com</a></div>
+            </div>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <!-- Menu -->
+            <div class="collapse navbar-collapse mt-2 mt-lg-0" id="navbarNavDropdown">
 
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">O Firmie</a>
+                        <a class="nav-link px-3" href="#">O Firmie</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="zakres.html">Zakres Robót</a>
+                        <a class="nav-link px-3" href="zakres.html">Zakres Robót</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="maszyny.html">Dostępne Maszyny</a>
+                        <a class="nav-link px-3" href="maszyny.html">Posiadane Maszyny</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cennik.html">Cennik</a>
+                        <a class="nav-link px-3" href="cennik.html">Cennik</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="referencje.html">Referencje</a>
-                    </li>
-
-                    <!-- Kontakt mobilny -->
-                    <li class="nav-item d-lg-none mt-2">
-                        <span class="text-white d-block"><strong>📞</strong> <a href="tel:+48123456789"
-                                class="text-white text-decoration-none">+48 123 456 789</a></span>
-                        <span class="text-white d-block mt-1"><strong>✉️</strong> <a href="mailto:kontakt@example.com"
-                                class="text-white text-decoration-none">kontakt@example.com</a></span>
+                        <a class="nav-link px-3" href="referencje.html">Referencje</a>
                     </li>
                 </ul>
 
                 <!-- Kontakt desktop -->
-                <div class="d-none d-lg-flex ms-auto text-white align-items-center">
-                    <span class="me-3"><strong>📞</strong> <a href="tel:+48123456789"
-                            class="text-white text-decoration-none">+48 123 456 789</a></span>
-                    <span><strong>✉️</strong> <a href="mailto:kontakt@example.com"
-                            class="text-white text-decoration-none">kontakt@example.com</a></span>
+                <div class="d-none d-lg-flex ms-4 text-white align-items-center small">
+                    <div class="me-4"><strong>📞</strong> <a href="tel:+48123456789"
+                            class="text-white text-decoration-none">+48 123 456 789</a></div>
+                    <div><strong>✉️</strong> <a href="mailto:kontakt@example.com"
+                            class="text-white text-decoration-none">kontakt@example.com</a></div>
                 </div>
 
             </div>
         </div>
     </nav>
+
 
     <!-- Główna zawartość -->
     <section class="py-5 bg-dark-subtle">
@@ -85,39 +91,43 @@
                 <!-- Treść po lewej -->
                 <div class="col-md-7">
                     <h1 class="mb-5">O firmie</h2>
-                    <p>Zakład Usługowy - Wielobranżowy został założony i jest prowadzony przez Stanisława Babisia, który większość prac wykonuje
-                        osobiście, dbając o jakość i solidność każdego zlecenia.</p>
-                    <p>Od ponad 15 lat zdobywa doświadczenie w branży robót ziemnych, oferując niezawodne usługi
-                        klientom indywidualnym i instytucjom.</p>
-                    <p>Jednym z ważniejszych jego partnerów jest lokalna gmina Pruchnik, z którą łączy go wieloletnia
-                        współpraca przy inwestycjach drogowych, melioracyjnych oraz usługach odśnieżania.</p>
-                    <p>Stanisław Babiś to nie tylko fachowiec, ale i pasjonat ciężkiego sprzętu oraz majsterkowania. To 
-                        przekłada się bezpośrednio na zaangażowanie i dbałość o każdy szczegół.</p>
+                        <p>Zakład Usługowy - Wielobranżowy został założony i jest prowadzony przez Stanisława Babisia,
+                            który większość prac wykonuje
+                            osobiście, dbając o jakość i solidność każdego zlecenia.</p>
+                        <p>Od ponad 15 lat zdobywa doświadczenie w branży robót ziemnych, oferując niezawodne usługi
+                            klientom indywidualnym i instytucjom.</p>
+                        <p>Jednym z ważniejszych jego partnerów jest lokalna gmina Pruchnik, z którą łączy go
+                            wieloletnia
+                            współpraca przy inwestycjach drogowych, melioracyjnych oraz usługach odśnieżania.</p>
+                        <p>Stanisław Babiś to nie tylko fachowiec, ale i pasjonat ciężkiego sprzętu oraz majsterkowania.
+                            To
+                            przekłada się bezpośrednio na zaangażowanie i dbałość o każdy szczegół.</p>
 
-                    <!-- Blok kontaktowy -->
-                    <div class="mt-4 p-4 bg-success-subtle rounded-4 shadow-sm border border-success">
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="bi bi-person-lines-fill fs-4 text-primary me-2"></i>
-                            <h5 class="mb-0">Skontaktuj się!</h5>
+                        <!-- Blok kontaktowy -->
+                        <div class="mt-4 p-4 bg-success-subtle rounded-4 shadow-sm border border-success">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-person-lines-fill fs-4 text-primary me-2"></i>
+                                <h5 class="mb-0">Skontaktuj się!</h5>
+                            </div>
+                            <p class="mb-1">
+                                <i class="bi bi-envelope-fill text-primary me-2"></i>
+                                <a href="mailto:jan.kowalski@example.com"
+                                    class="text-decoration-none text-dark">zuwstasiu@wp.pl</a>
+                            </p>
+                            <p class="mb-0">
+                                <i class="bi bi-telephone-fill text-primary me-2"></i>
+                                <a href="tel:+48123456789" class="text-decoration-none text-dark">+48 604 867 827</a>
+                            </p>
                         </div>
-                        <p class="mb-1">
-                            <i class="bi bi-envelope-fill text-primary me-2"></i>
-                            <a href="mailto:jan.kowalski@example.com"
-                                class="text-decoration-none text-dark">zuwstasiu@wp.pl</a>
-                        </p>
-                        <p class="mb-0">
-                            <i class="bi bi-telephone-fill text-primary me-2"></i>
-                            <a href="tel:+48123456789" class="text-decoration-none text-dark">+48 604 867 827</a>
-                        </p>
-                    </div>
 
                 </div>
                 <!-- Zdjęcie po prawej -->
                 <div class="col-md-5 mb-4 mb-md-0">
                     <a href="img/Stanislaw3.jpg">
-                        <img src="img/Stanislaw3.jpg" alt="Jan Kowalski przy koparce" class="img-fluid rounded-4 shadow">
+                        <img src="img/Stanislaw3.jpg" alt="Jan Kowalski przy koparce"
+                            class="img-fluid rounded-4 shadow">
                     </a>
-                    
+
                 </div>
             </div>
         </div>
