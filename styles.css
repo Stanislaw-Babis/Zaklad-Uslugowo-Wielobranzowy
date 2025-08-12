@@ -35,3 +35,7 @@
     height: auto;
     border: 2px solid #ccc;
 }
+
+.phone-dark a {
+    color: black !important;
+}

@@ -36,12 +36,16 @@
 
             <!-- Kontakt mobilny (zawsze widoczny) -->
             <div class="d-lg-none ms-auto text-white text-end small">
-                <div><strong>📞</strong> <a href="tel:+48604867827" class="text-white text-decoration-none">+48 604 867
-                        827</a></div>
-                <div><strong>✉️</strong> <a href="mailto:zuwstasiu@wp.pl"
-                        class="text-white text-decoration-none">zuwstasiu@wp.pl</a></div>
+                <div>
+                    <strong>📞</strong>
+                    <button class="btn btn-sm btn-outline-light py-0 px-2 show-phone">Pokaż numer</button>
+                    <span class="phone-number d-none"></span>
+                </div>
+                <div class="mt-1">
+                    <strong>✉️</strong>
+                    <a href="mailto:zuwstasiu@wp.pl" class="text-white text-decoration-none">zuwstasiu@wp.pl</a>
+                </div>
             </div>
-
             <!-- Toggler -->
             <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -72,13 +76,17 @@
 
                 <!-- Kontakt desktop -->
                 <div class="d-none d-lg-flex ms-4 text-white align-items-center small">
-                    <div class="me-4"><strong>📞</strong> <a href="tel:+48604867827"
-                            class="text-white text-decoration-none">+48 604 867 827</a></div>
-                    <div><strong>✉️</strong> <a href="mailto:zuwstasiu@wp.pl"
-                            class="text-white text-decoration-none">zuwstasiu@wp.pl</a></div>
+                    <div class="me-4">
+                        <strong>📞</strong>
+                        <button class="btn btn-sm btn-outline-light py-0 px-2 show-phone">Pokaż numer</button>
+                        <span class="phone-number d-none"></span>
+                    </div>
                 </div>
-
+                <div><strong>✉️</strong> <a href="mailto:zuwstasiu@wp.pl"
+                        class="text-white text-decoration-none">zuwstasiu@wp.pl</a></div>
             </div>
+
+        </div>
         </div>
     </nav>
 
@@ -185,6 +193,10 @@
     </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        phoneReveal();
+    </script>
 
 </body>
 
